@@ -1,0 +1,30 @@
+<div class="max-w-3xl mx-auto py-8">
+  <div
+    class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-md"
+  >
+    <p class="font-semibold">Shortened URL:</p>
+    <p class="flex items-center">
+      <a href="{{ short_url }}" target="_blank" class="text-blue-600 underline"
+        >{{ short_url }}</a
+      >
+      <button
+        onclick="copyToClipboard('{{ short_url }}')"
+        class="ml-2 px-2 py-1 bg-blue-500 text-white rounded-md"
+        title="Copy"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          width="20"
+          height="20"
+        >
+          <path
+            d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </p>
+    <p>Description: {{ description }}</p>
+  </div>
+</div>
