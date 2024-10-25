@@ -1,0 +1,23 @@
+{% extends "layout/base.html" %}{%block content%}
+<div class="max-w-3xl mx-auto py-8">
+  <h1 class="text-3xl font-bold mb-8">URL Shorter</h1>
+
+  <form hx-post="/shorten" hx-swap="outerHTML" hx-target="#result">
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700">Long URL</label>
+      <input
+        type="url"
+        name="long_url"
+        required
+        class="mt-1 px-3 py-2 border border-gray-300 rounded-md w-full"
+      />
+    </div>
+    <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md">
+      Shorten
+    </button>
+  </form>
+</div>
+
+<div id="result"></div>
+
+{%endblock content%}
