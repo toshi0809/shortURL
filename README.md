@@ -10,9 +10,13 @@ make server 開啟伺服器
 ### 技術使用
 
 前端：TailwindCSS, Alpine.js, HTMX
+
 後端：Python, Flask
+
 資料庫：SQLite
+
 版本控制：Git
+
 部署：AWS EC2, Nginx
 
 ### 簡易講解影片(30 分鐘)
