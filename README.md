@@ -24,3 +24,5 @@ make server 開啟伺服器
 YouTube 連結:https://youtu.be/GEY8Nl5aIxY
 
 ### 專案佈署連結
+
+網址連結:http://ec2-52-54-253-245.compute-1.amazonaws.com/
