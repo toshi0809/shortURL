@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request, url_for
 from orm.setting import db
 import string, random
 from models.URL import URL
@@ -55,7 +55,7 @@ def shorten():
 
     short_url = request.host_url + short_id
     return render_template(
-        "URL/_generateURL.html",
+        "url/_generateURL.html",
         short_url=short_url,
         description=description,
         long_url=long_url,
