@@ -5,7 +5,6 @@ from models.URL import URL
 from flask_migrate import Migrate
 from bs4 import BeautifulSoup
 import requests
-import logging
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///app.db"
@@ -73,5 +72,3 @@ def redirect_to_long(short_id):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-    
-logging.basicConfig(filename='app.log', level=logging.DEBUG)
